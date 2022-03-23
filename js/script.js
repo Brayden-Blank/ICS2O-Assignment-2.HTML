@@ -7,11 +7,11 @@
 /**
  * This function gets users address number and street and shows it back to the user
  */
-function enterClicked() {
+function calculateClicked() {
   //input
-  const sideLength = parseInt(document.getElementById("address-number").value)
+  const sideLength = parseInt(document.getElementById("side-length").value)
 
   //output
   document.getElementById("area").innerHTML = 
-    "<p>The area is: " + sideLength + " cm²" + streetName + "!<p>"
+    "<p>The area is: " + (sideLength * sideLength) " cm²!<p>"
 }
