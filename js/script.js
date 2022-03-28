@@ -9,9 +9,12 @@
  */
 function calculateClicked() {
   //input
-  const sideLength = parseInt(document.getElementById("side-length").value)
+  const length = parseInt(document.getElementById("length").value)
+  const width = parseInt(document.getElementById("width").value)
 
+  //process
+  const area = (length * width)
+  
   //output
-  document.getElementById("area").innerHTML = 
-    "<p>The area is: " + (sideLength * sideLength) " cm²!<p>"
+  document.getElementById("square-area").innerHTML = "<p>The area is: " + area + " cm²!<p>"
 }
